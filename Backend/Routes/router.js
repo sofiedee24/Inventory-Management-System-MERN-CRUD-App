@@ -53,7 +53,7 @@ router.get('/products/:id', async (req, res) => {
 })
 
 //Editing(Updating) Data:
-router.put('/updateproduct/:id', async (req, res) => {
+router.patch('/updateproduct/:id', async (req, res) => {
     const { ProductName, ProductPrice, ProductBarcode } = req.body;
 
     try {
